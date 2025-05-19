@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zachary Nicholas | Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#learn-to-code">Learn to Code</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Securing Digital Frontiers with Cyber Defense & Automation</h1>
+        <p>I’m Zachary Nicholas—A cybersecurity specialist focused on protecting IT systems, automating security processes, and mitigating threats.</p>
+        <a href="#projects" class="button">Explore My Work</a>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>With a background in cybersecurity operations, SIEM analysis, and secure automation, I specialize in threat detection, risk mitigation, and IT security enhancement. I am passionate about applying structured security methodologies to protect digital environments.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <p>Explore my cybersecurity tools, automation scripts, and security analysis projects.</p>
+
+        <div class="project-container">
+            <div class="project-card">
+                <h3>SecureStack Toolkit</h3>
+                <p>A modular cybersecurity tool for vulnerability scanning and network analysis.</p>
+                <a href="https://github.com/Toast-stack/SecureStack-Toolkit" class="button">View on GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>SSH Log Analyzer</h3>
+                <p>Python tool for detecting brute force attacks and identifying suspicious SSH logs.</p>
+                <a href="https://github.com/Toast-stack/SSHLogAnalyzer" class="button">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learn to Code Section -->
+    <section id="learn-to-code">
+        <h2>Learn to Code</h2>
+        <p>Explore programming projects designed to help beginners understand Python, C++, Rust, and Go.</p>
+
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Python Playground</h3>
+                <p>Beginner-friendly Python projects for learning automation and scripting.</p>
+                <a href="https://github.com/Toast-stack/Python-Playground" class="button">Explore Python</a>
+            </div>
+
+            <div class="project-card">
+                <h3>C++ Playground</h3>
+                <p>Projects introducing C++ programming fundamentals.</p>
+                <a href="https://github.com/Toast-stack/CPlusPlus-Playground" class="button">Explore C++</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume & Professional Experience</h2>
+
+        <!-- Objective -->
+        <div class="resume-block">
+            <h3>Professional Objective</h3>
+            <p>Results-driven cybersecurity professional with expertise in threat detection, incident response, and vulnerability management. Leveraging industry-recognized certifications, I aim to safeguard systems, mitigate risks, and enhance organizational resilience.</p>
+        </div>
+
+        <!-- Certifications -->
+        <div class="resume-block">
+            <h3>Certifications</h3>
+            <ul>
+                <li>CompTIA A+, Network+, Security+, CySA+</li>
+                <li>Certified in Cybersecurity (ISC2)</li>
+            </ul>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="resume-block">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>Threat Detection, Incident Response, SIEM (Splunk, Microsoft Defender)</li>
+                <li>Firewall Configurations, VPNs, IDS/IPS</li>
+                <li>Cloud Security: AWS & Azure Hardening</li>
+                <li>Programming: Python, PowerShell, Bash, SQL</li>
+            </ul>
+        </div>
+
+        <!-- Work Experience -->
+        <div class="resume-block">
+            <h3>Work Experience</h3>
+            <p><strong>Independent IT Consultant (Jan 2020 – Present)</strong></p>
+            <ul>
+                <li>Conducted security assessments and SIEM log analysis.</li>
+                <li>Developed technical documentation for cybersecurity compliance.</li>
+            </ul>
+
+            <p><strong>Heavy Equipment Mechanic, US Marine Corps (May 2017 – Aug 2021)</strong></p>
+            <ul>
+                <li>Diagnosed and maintained mission-critical machinery.</li>
+                <li>Led technical assessments to enhance operational security.</li>
+            </ul>
+        </div>
+
+        <!-- Resume Download -->
+        <div class="resume-block">
+            <h3>Download Resume</h3>
+            <a href="resume.pdf" class="button">Download PDF</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Connect with me on <a href="https://linkedin.com/in/zachary-nicholas1341/">LinkedIn</a> or <a href="https://github.com/Toast-stack">GitHub</a>.</p>
+    </section>
+
+</body>
+</html>
