@@ -1,0 +1,170 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 10px;
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00c3ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #00a1d1;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 70px;
+    background: linear-gradient(135deg, #1e1e1e, #262626);
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00c3ff;
+    text-shadow: 2px 2px 5px rgba(0, 195, 255, 0.2);
+}
+
+#hero p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+/* About Me Section */
+#about {
+    text-align: center;
+    padding: 50px;
+}
+
+#about h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #00c3ff;
+}
+
+#about p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Project Cards */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #1f1f1f;
+    padding: 20px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-card h3 {
+    color: #00c3ff;
+}
+
+.project-card p {
+    font-size: 1rem;
+}
+
+/* Resume Section */
+#resume {
+    text-align: center;
+    padding: 50px;
+    background-color: #1f1f1f;
+}
+
+#resume h2 {
+    font-size: 2.2rem;
+    color: #00c3ff;
+}
+
+.resume-block {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #121212;
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.resume-block h3 {
+    color: #00c3ff;
+    font-size: 1.5rem;
+}
+
+.resume-block p, .resume-block ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.resume-block ul {
+    padding-left: 20px;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+}
+
+#contact a {
+    color: #00c3ff;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume-block {
+        padding: 15px;
+    }
+}
