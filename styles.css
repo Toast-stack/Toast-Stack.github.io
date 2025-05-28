@@ -81,8 +81,8 @@ body {
 #about p {
     font-size: 1.1rem;
     max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
+    margin: 15px auto;
+    line-height: 1.8;
 }
 
 /* Featured Projects & Learn to Code Sections */
