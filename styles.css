@@ -20,6 +20,7 @@ header {
     z-index: 1000;
 }
 
+/* Navigation Menu */
 nav ul {
     display: flex;
     justify-content: center;
@@ -47,6 +48,18 @@ body {
     padding-top: 60px; /* Adjust this based on header size */
 }
 
+/* Responsive Navigation */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
 /* Hero Section */
 #hero {
     text-align: center;
@@ -66,6 +79,17 @@ body {
     opacity: 0.9;
 }
 
+/* Responsive Hero Section */
+@media screen and (max-width: 768px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+}
+
 /* About Me Section */
 #about {
     text-align: center;
@@ -83,6 +107,28 @@ body {
     max-width: 800px;
     margin: 15px auto;
     line-height: 1.8;
+}
+
+/* Responsive About Section */
+@media screen and (max-width: 768px) {
+    #about {
+        padding: 30px;
+    }
+
+    #about p {
+        font-size: 1rem;
+    }
+}
+
+/* Custom List Style */
+.custom-list {
+    list-style-type: square; /* Alternative: disc, circle, none */
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.custom-list li {
+    margin-bottom: 8px;
 }
 
 /* Featured Projects & Learn to Code Sections */
@@ -105,6 +151,19 @@ body {
     justify-content: center;
 }
 
+/* Responsive Project Layout */
+@media screen and (max-width: 600px) {
+    .project-container {
+        grid-template-columns: 1fr; /* Ensures single-column layout */
+    }
+
+    .project-card {
+        max-width: 90%;
+        margin: 0 auto; /* Centers the cards */
+    }
+}
+
+/* Project Card */
 .project-card {
     background-color: #121212;
     padding: 20px;
@@ -130,54 +189,15 @@ body {
     margin-bottom: 15px;
 }
 
-.project-card .button {
-    padding: 10px;
-    color: #121212;
-    background-color: #00c3ff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-.project-card .button:hover {
-    background-color: #008bb0;
-}
-
-/* Resume Section */
-#resume {
-    text-align: center;
-    padding: 50px;
-    background-color: #1f1f1f;
-}
-
-#resume h2 {
-    font-size: 2.2rem;
-    color: #00c3ff;
-}
-
-.resume-block {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #121212;
-    border-radius: 10px;
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
-    text-align: left;
-}
-
-.resume-block h3 {
-    color: #00c3ff;
-    font-size: 1.5rem;
-}
-
-.resume-block p, .resume-block ul {
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
-.resume-block ul {
-    padding-left: 20px;
+/* Responsive Buttons */
+@media screen and (max-width: 480px) {
+    .button {
+        padding: 12px 18px;
+        font-size: 1rem;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
 }
 
 /* Contact Section */
@@ -215,21 +235,12 @@ body {
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-.contact-card h3 {
-    color: #00c3ff;
+/* Responsive Contact Section */
+@media screen and (max-width: 768px) {
+    .contact-card {
+        width: 100%;
+    }
 }
-
-.contact-card p a {
-    color: #00c3ff;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.contact-card p a:hover {
-    color: #008bb0;
-}
-
-
 
 /* Back to Top Button */
 #backToTop {
@@ -252,31 +263,9 @@ body {
     background-color: #008bb0;
 }
 
-/* Responsive Design */
+/* Adjusted Spacing for Small Screens */
 @media screen and (max-width: 768px) {
-    #hero h1 {
-        font-size: 2.5rem;
-    }
-
-    #hero p {
-        font-size: 1rem;
-    }
-
-    .project-container {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    }
-
-    .resume-block {
-        padding: 15px;
-    }
-}
-
-@media screen and (max-width: 480px) {
     #projects, #learn-to-code {
-        padding: 30px;
-    }
-
-    .project-card {
-        padding: 15px;
+        padding: 40px;
     }
 }
