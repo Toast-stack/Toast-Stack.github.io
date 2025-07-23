@@ -1,13 +1,11 @@
-/* Global Reset */
-*,
-*::before,
-*::after {
+/* 🔁 Global Reset */
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base Styles */
+/* 🌑 Base Styles */
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   background-color: #121212;
@@ -16,7 +14,7 @@ body {
   font-size: 16px;
 }
 
-/* Header & Navigation */
+/* 📌 Header & Navigation */
 header {
   position: sticky;
   top: 0;
@@ -57,14 +55,14 @@ header nav {
   color: #e0e0e0;
 }
 
-/* Section Base Styles */
+/* 🧱 Section Styling */
 section {
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Hero Section */
+/* 🦾 Hero Section */
 #hero {
   text-align: center;
   background-color: #1a1a1a;
@@ -81,7 +79,7 @@ section {
   color: #ccc;
 }
 
-/* About Section */
+/* 🧠 About Me Section */
 #about h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -99,7 +97,13 @@ section {
   line-height: 1.8;
 }
 
-/* Resume Section */
+#about ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  list-style-type: disc;
+}
+
+/* 📄 Resume Cards */
 #resume {
   text-align: center;
 }
@@ -109,12 +113,31 @@ section {
   margin-bottom: 1rem;
 }
 
-#resume p {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
+.resume-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
-/* Projects & Learn to Code Sections */
+.resume-card {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  padding: 1.5rem;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.resume-card:hover {
+  transform: translateY(-4px);
+}
+
+.resume-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 🧰 Projects & Learn to Code */
 .project-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -144,17 +167,19 @@ section {
   margin-bottom: 1rem;
 }
 
-/* Learn to Code Section Specifics */
+/* 🧑‍💻 Learn to Code Section */
 #learn-to-code h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 #learn-to-code p {
   margin-bottom: 2rem;
+  text-align: center;
 }
 
-/* Contact Section */
+/* 📬 Contact Section */
 #contact {
   text-align: center;
   padding-bottom: 4rem;
@@ -177,9 +202,55 @@ section {
   border: 1px solid #333;
   padding: 1.5rem;
   border-radius: 4px;
+  transition: transform 0.3s ease;
 }
 
-/* Button Styling */
+.contact-card:hover {
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* ✉️ Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form label {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  text-align: left;
+}
+
+input,
+textarea {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  padding: 0.75rem;
+  color: #e0e0e0;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #1e90ff;
+  border-color: #1e90ff;
+}
+
+form .button {
+  width: fit-content;
+  align-self: center;
+}
+
+/* 🖱️ Buttons */
 .button {
   display: inline-block;
   background-color: #333;
@@ -195,9 +266,8 @@ section {
   background-color: #555;
 }
 
-/* Responsive Styles */
+/* 📱 Responsive Styles */
 @media screen and (max-width: 768px) {
-  /* Activate hamburger nav */
   #nav-toggle {
     display: block;
   }
@@ -205,7 +275,7 @@ section {
   #nav-menu {
     flex-direction: column;
     position: absolute;
-    top: 60px; /* Adjust based on header height */
+    top: 60px;
     right: 0;
     background-color: #1f1f1f;
     width: 180px;
@@ -219,5 +289,11 @@ section {
 
   #nav-menu li {
     margin: 1rem;
+  }
+
+  .project-container,
+  .resume-container,
+  .contact-container {
+    grid-template-columns: 1fr;
   }
 }
