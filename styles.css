@@ -79,59 +79,60 @@ section {
   color: #ccc;
 }
 
-/* About Me Section */
-/* Container to center cards */
-.card-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
+.about-section {
+  padding: 3rem 2rem;
+  background-color: #121218;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
-/* Individual Card Styling */
-.card {
-  background-color: #1c1c2b; /* Adjust to match site background */
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+.about-card {
+  background-color: #1b1b25;
+  border: 1px solid #3f8efc;
+  padding: 1.75rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
 
-.card:hover {
+.about-card:hover {
   transform: translateY(-4px);
 }
 
-/* Section Title */
-.card-title {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
+.about-title {
+  font-size: 1.25rem;
   color: #ffffff;
-  border-bottom: 2px solid #3f8efc;
-  padding-bottom: 0.4rem;
-}
-
-/* Paragraph Text */
-.card-text {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #d0d0e0;
   margin-bottom: 1rem;
+  border-bottom: 2px solid #3f8efc;
+  padding-bottom: 0.3rem;
 }
 
-/* List Items */
-.card-list {
+.about-card p,
+.about-card li {
+  color: #d0d0e0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.about-card ul {
   list-style-type: disc;
   padding-left: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.card-list li {
-  margin-bottom: 0.5rem;
-  color: #c8c8dc;
-  font-size: 0.95rem;
+.btn-primary {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #3f8efc;
+  color: #ffffff;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
 }
 
 /* Resume Cards */
