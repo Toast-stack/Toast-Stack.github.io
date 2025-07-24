@@ -1,11 +1,11 @@
-/* 🔁 Global Reset */
+/* Global Reset */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 🌑 Base Styles */
+/* Base Styles */
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   background-color: #121212;
@@ -14,7 +14,7 @@ body {
   font-size: 16px;
 }
 
-/* 📌 Header & Navigation */
+/* Header & Navigation */
 header {
   position: sticky;
   top: 0;
@@ -55,14 +55,14 @@ header nav {
   color: #e0e0e0;
 }
 
-/* 🧱 Section Styling */
+/* Section Styling */
 section {
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* 🦾 Hero Section */
+/* Hero Section */
 #hero {
   text-align: center;
   background-color: #1a1a1a;
@@ -79,31 +79,62 @@ section {
   color: #ccc;
 }
 
-/* 🧠 About Me Section */
-#about h2 {
-  font-size: 2rem;
+/* About Me Section */
+/* Container to center cards */
+.card-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Individual Card Styling */
+.card {
+  background-color: #1c1c2b; /* Adjust to match site background */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Section Title */
+.card-title {
+  font-size: 1.6rem;
   margin-bottom: 1rem;
-  text-align: center;
+  font-weight: 600;
+  color: #ffffff;
+  border-bottom: 2px solid #3f8efc;
+  padding-bottom: 0.4rem;
 }
 
-#about h3 {
-  font-size: 1.5rem;
-  margin: 2rem 0 0.5rem;
-}
-
-#about p {
+/* Paragraph Text */
+.card-text {
   font-size: 1rem;
+  line-height: 1.6;
+  color: #d0d0e0;
   margin-bottom: 1rem;
-  line-height: 1.8;
 }
 
-#about ul {
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
+/* List Items */
+.card-list {
   list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-/* 📄 Resume Cards */
+.card-list li {
+  margin-bottom: 0.5rem;
+  color: #c8c8dc;
+  font-size: 0.95rem;
+}
+
+/* Resume Cards */
 #resume {
   text-align: center;
 }
@@ -137,7 +168,7 @@ section {
   margin-bottom: 0.5rem;
 }
 
-/* 🧰 Projects & Learn to Code */
+/* Projects & Learn to Code */
 .project-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -167,7 +198,7 @@ section {
   margin-bottom: 1rem;
 }
 
-/* 🧑‍💻 Learn to Code Section */
+/* Learn to Code Section */
 #learn-to-code h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -179,7 +210,7 @@ section {
   text-align: center;
 }
 
-/* 📬 Contact Section */
+/* Contact Section */
 #contact {
   text-align: center;
   padding-bottom: 4rem;
@@ -210,7 +241,7 @@ section {
   transform: translateY(-2px);
 }
 
-/* ✉️ Contact Form */
+/* Contact Form */
 form {
   display: flex;
   flex-direction: column;
@@ -250,7 +281,7 @@ form .button {
   align-self: center;
 }
 
-/* 🖱️ Buttons */
+/* Buttons */
 .button {
   display: inline-block;
   background-color: #333;
@@ -266,7 +297,7 @@ form .button {
   background-color: #555;
 }
 
-/* 📱 Responsive Styles */
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
   #nav-toggle {
     display: block;
